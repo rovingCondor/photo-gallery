@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/93b2338e64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="hero-image">
+		<div class="hero-text">
+		  <h1 class="hero-header">hero section heading</h1>
+		  <p>subheading content here</p>
+		  <button class="btn-hero">Learn more</button>
+		</div>
+	</div>
+
+	<h2 class="category-heading">
+		Project Gallery
+	</h2>
+
+	<!-- Modal + Image Gallery | START -->
+	<div class="full-img-modal">
+		<img src="img/gallery-images/gallery-img-01.jpg" alt="" id="full-img">
+		<span class="close-gallery fa-solid fa-circle-xmark" onclick="closeFullImgModal()"></span>
+	</div>
+
+	<div class="img-gallery">
+		<img src="img/gallery-images/gallery-img-01.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-02.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-03.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-04.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-05.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-06.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-07.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+		<img src="img/gallery-images/gallery-img-08.jpg" alt="" class="img-thumb" onclick="openFullImgModal(this.src)">
+	</div>
+	<!-- Modal + Image Gallery | END -->
+
+	<h2 class="category-heading">
+		Category Name Here
+	</h2>
+
+	<div class="spacer"> </div>
+
+
+
+	<script src="js/scripts.js"></script>
+	
+</body>
+</html>

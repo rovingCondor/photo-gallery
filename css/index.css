@@ -1,0 +1,132 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #ecf4fb;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2234006/pexels-photo-2234006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    min-height: 15em;
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+      
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+.hero-header {
+    align-self: center;
+    font-size:50px;
+}
+
+.btn-hero {
+	background-color:transparent;
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	margin-top: 20px;
+	padding: 10px 15px;
+	border: 1px solid #fff;
+}
+
+.btn-hero:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+h2.category-heading {
+	font-size: 2rem;
+	font-weight: 900;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #40008a;
+	padding: 12px 20px 12px 20px;
+	display: inline-block;
+	margin: 2% 0 0 5%;
+}
+
+.spacer {
+	margin-bottom: 200px;
+}
+
+
+/* Modal + Image Gallery | START */
+.img-thumb {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.img-gallery {
+	width: 80%;
+	margin: 25px auto 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.img-gallery img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.img-gallery img:hover {
+	filter: brightness(50%);
+}
+
+.full-img-modal {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.full-img-modal img {
+	height: 90vh;
+}
+
+.close-gallery {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	cursor: pointer;
+	color: #fff;
+	font-size: 2.5rem;
+}
+
+.close-gallery:hover {
+	color: #b7b7b7;
+}
+/* Modal + Image Gallery | END */
